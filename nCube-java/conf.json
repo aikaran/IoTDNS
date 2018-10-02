@@ -1,0 +1,43 @@
+{
+    "useprotocol": "http",
+    "cse": {
+        "cbhost": "192.168.137.10",
+        "cbport": "7579",
+        "cbname": "Mobius",
+        "cbcseid": "/Mobius",
+        "mqttport": "1883"
+    },
+    "ae": {
+        "aeid": "S",
+        "appid": "0.2.481.1.1",
+        "appname": "test9",
+        "appport": "9727",
+        "bodytype": "xml",
+        "tasport": "3105"
+    },
+   "cnt": [
+        {
+            "parentpath": "/test9",
+            "ctname": "cnt-co2"
+        },
+        {
+            "parentpath": "/test9",
+            "ctname": "cnt-led"
+        },
+		{
+            "parentpath": "/test9",
+            "ctname": "cnt-temp"
+        },
+		{
+            "parentpath": "/test9",
+            "ctname": "cnt-humi"
+        }
+    ],
+    "sub": [
+        {
+            "parentpath": "/test9/cnt-led",
+            "subname": "sub-ctrl",
+            "nu": "mqtt://AUTOSET"
+        }
+    ]
+}
